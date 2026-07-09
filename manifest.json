@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "WeWork Desk Finder",
+  "version": "1.2",
+  "description": "Find the first available desk on WeWork booking page.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://members.wework.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
